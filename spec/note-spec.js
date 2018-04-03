@@ -1,11 +1,8 @@
+
 (function(exports){
   function testNoteText(){
     var note = new Note("Javascript");
-    if(note.getText() !== "Javascript"){
-    throw new Error('No text passed');
-  }
-  console.log('Test Passed');
+    assert.isTrue(note.getText() === "Javascript");
   };
-
-  testNoteText();
+  exports.testNoteText = testNoteText();
 })(this);
