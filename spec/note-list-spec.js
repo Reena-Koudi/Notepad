@@ -11,7 +11,7 @@
     var note = new Note("Javascript");
     var noteList = new NoteList();
     noteList.addNote(note);
-    assert.isTrue(noteList.getNotes()[0] === note);
+    assert.isTrue(noteList.notes[0] === note);
   };
   exports.testNoteListAddNotesAndGetNotes = testNoteListAddNotesAndGetNotes();
 })(this);
@@ -20,7 +20,7 @@
   function testNoteListCreateNote(){
     var noteList = new NoteList();
     noteList.createNote("Javascript");
-    assert.isTrue(noteList.getNotes()[0].getText() === "Javascript");
+    assert.isTrue(noteList.notes[0].getText() === "Javascript");
   };
   exports.testNoteListCreateNote = testNoteListCreateNote();
 })(this);
