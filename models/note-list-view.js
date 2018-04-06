@@ -10,7 +10,7 @@
     for (var i = 0; i < notes.length; i++) {
       htmlView += "<li><div>" + notes[i].getText() + "</div></li>";
     }
-    htmlView += "</ul>"
+    htmlView = "</ul>"
     return htmlView;
   };
 
