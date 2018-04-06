@@ -8,7 +8,7 @@
     var htmlView = "<ul>"
     var notes = this.noteList.getNotes();
     for (var i = 0; i < notes.length; i++) {
-      htmlView += "<li><div>" + notes[i].getText() + "</div></li>";
+      htmlView += "<li><div>" + notes[i].getText().substr(0,20) + "</div></li>";
     }
     htmlView = "</ul>"
     return htmlView;
